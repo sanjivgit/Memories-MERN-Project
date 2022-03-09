@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Container {
+  background-image: url("/public/images/bg-memories2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+}
+.Container_wrap {
+  max-width: 70vw;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.app_bar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 5px 3px 22px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.app_bar > img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.app_bar > h1 {
+  font-size: xx-large;
+}
+
+.Post_Form {
+  margin-top: 30px;
+  display: flex;
+}
+
+.Left_Post {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Right_Form {
+  flex: 1;
+}

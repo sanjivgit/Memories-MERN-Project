@@ -1,0 +1,24 @@
+.Form_Container {
+  background-color: #ffff;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  margin: 0 40px;
+  box-shadow: 5px 3px 22px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.Text_Field {
+  margin: 10px;
+}
+
+.MuiButton-root {
+  background-color: rgb(57, 68, 224) !important;
+  color: white !important;
+  transition: all 0.5s !important;
+  margin-top: 10px !important;
+}
+
+.MuiButton-root:hover {
+  background-color: rgb(82, 91, 219) !important;
+}
