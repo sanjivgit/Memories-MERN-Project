@@ -1,0 +1,68 @@
+.singlePost {
+  margin: 30px 200px 0;
+}
+
+.singlePostWrap {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePost_Img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.singlePost_Title {
+  text-align: center;
+  margin: 10px;
+}
+
+.singlePost_Update {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.singlePost_Edit {
+  font-size: 16px;
+  color: teal;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.singlePost_Delete {
+  font-size: 16px;
+  color: tomato;
+  cursor: pointer;
+}
+
+.singlePost_About {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.singlePost_About span:first-child {
+  font-size: 18px;
+  color: coral;
+}
+
+.singlePost_About span:last-child {
+  font-size: 18px;
+  color: chocolate;
+}
+
+.singlePost_Desc {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.singlePost_Desc::first-letter {
+  font-size: 25px;
+  color: #444;
+  font-weight: 600;
+  margin-right: 3px;
+}

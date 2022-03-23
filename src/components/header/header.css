@@ -1,0 +1,19 @@
+.app_bar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 5px 3px 22px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.app_bar > img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.app_bar > h1 {
+  font-size: xx-large;
+}

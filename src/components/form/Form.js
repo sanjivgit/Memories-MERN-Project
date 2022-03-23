@@ -28,6 +28,8 @@ function Form() {
         />
         <TextField
           sx={{ margin: "10px 0" }}
+          multiline={true}
+          rows={4}
           name="Message"
           variant="outlined"
           label="Message"
@@ -44,7 +46,7 @@ function Form() {
           focused
           placeholder="Enter tags"
         />
-        <FileBase type="file" multiple={false} />
+        <input type="file" />
         <Button type="submit" variant="container" size="large" fullWidth>
           Submit
         </Button>
