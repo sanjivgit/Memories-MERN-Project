@@ -12,9 +12,9 @@ function Home() {
         <div className="Post_Form">
           <div className="Left_Post">
             <Posts />
-            {/* <Posts />
             <Posts />
-            <Posts /> */}
+            <Posts />
+            <Posts />
           </div>
           <div className="Right_Form">
             <Form />

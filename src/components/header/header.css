@@ -3,17 +3,41 @@
   background-color: white;
   box-shadow: 5px 3px 22px 8px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.Logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0;
 }
 
-.app_bar > img {
+.Logo > img {
   width: 30px;
   margin-left: 10px;
 }
 
-.app_bar > h1 {
+.Logo > h1 {
   font-size: xx-large;
+}
+
+.profile {
+  border-radius: 50%;
+  position: absolute;
+  top: 4.5px;
+  right: 15px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.Login {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
 }
