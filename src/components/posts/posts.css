@@ -1,6 +1,7 @@
 .Posts_Container {
   background-color: #ffff;
   width: 40%;
+  height: 380px;
   box-shadow: 5px 3px 22px -2px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   position: relative;
@@ -9,7 +10,7 @@
 
 .Posts_BackgroundImg {
   width: 100%;
-  height: 40%;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -43,7 +44,8 @@
 }
 
 .Posts_Tags {
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  margin: 0 10px;
 }
 
 .Posts_Tags span {
@@ -51,17 +53,25 @@
 }
 
 .Posts_Tags h2 {
-  padding: 10px 0;
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Posts_Tags p {
   color: gray;
-  overflow-y: scroll;
-  height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.Posts_Tags p::-webkit-scrollbar {
+/* .Posts_Tags p::-webkit-scrollbar {
   width: 3px;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -76,21 +86,15 @@
   border-radius: 10px;
 }
 
-.Like_Delete {
-  padding: 10px 10px 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: -15px;
-}
-
-.Posts_LikesDelete {
+.Posts_Likes {
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 10px 10px 0 10px;
+  margin-bottom: -15px;
 }
 
-.Posts_LikesDelete span {
+.Posts_Likes span {
   color: rgb(49, 49, 241);
   font-size: 12px;
   font-weight: 700;

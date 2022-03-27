@@ -22,3 +22,8 @@
 .MuiButton-root:hover {
   background-color: rgb(82, 91, 219) !important;
 }
+
+.Form_CreateAccount {
+  color: tomato;
+  cursor: pointer;
+}

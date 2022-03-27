@@ -33,6 +33,16 @@
   cursor: pointer;
 }
 
+.updateMode_Input {
+  border: none;
+  height: 40px;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
 .singlePost_Delete {
   font-size: 16px;
   color: tomato;
@@ -65,4 +75,25 @@
   color: #444;
   font-weight: 600;
   margin-right: 3px;
+}
+
+.updateMode_textarea {
+  border: none;
+  outline: none;
+  height: 100vh;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.updateMode_Button {
+  position: absolute;
+  top: 410px;
+  right: 130px;
+  width: 80px;
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }

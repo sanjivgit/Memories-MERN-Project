@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 
 function Header() {
-  const user = true;
+  const { user, dispatch } = useContext(Context);
+  const PF = "http://localhost:5000/images/";
   return (
     <nav className="app_bar">
       <div className="Logo">
@@ -10,11 +13,18 @@ function Header() {
         <img src="/images/picture.png" alt="" />
       </div>
       {user ? (
-        <img className="profile" src="/images/user.png" alt="" />
+        <Link className="link" to="/settings">
+          <img
+            className="profile"
+            src={user.profilePic ? PF + user.profilePic : "/images/user.png"}
+            alt=""
+          />
+        </Link>
       ) : (
-        <span className="Login">Login</span>
+        <Link className="link" to="/login">
+          <span className="Login">Login</span>
+        </Link>
       )}
-      {/* <span className="Logout">Logout</span> */}
     </nav>
   );
 }

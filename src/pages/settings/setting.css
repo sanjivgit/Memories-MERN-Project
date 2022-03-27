@@ -11,9 +11,16 @@
   align-items: center;
   justify-content: space-between;
   color: crimson;
+  margin-bottom: 30px;
 }
 
 .setting_account_delete {
+  cursor: pointer;
+}
+
+.account_logout {
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -51,6 +58,7 @@
   height: 70px;
   margin: 10px 0;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .settingsProfileIcon {
