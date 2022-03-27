@@ -7,7 +7,7 @@ const PostSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    img: {
+    photo: {
       type: String,
       required: false,
     },
@@ -18,6 +18,11 @@ const PostSchema = new mongoose.Schema(
     username: {
       type: String,
       required: false,
+    },
+    tags: {
+      type: String,
+      required: false,
+      default: "#",
     },
   },
   { timestamps: true }
